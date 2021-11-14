@@ -83,7 +83,7 @@ function seed() {
   };
   
   const main = (pattern, iterations) => {
-    const results = iterate(startPatterns[pattern, iterations]);
+    const results = iterate(startPatterns[pattern], iterations);
     results.forEach(r=> console.log(printCells(r)));
   };
   
