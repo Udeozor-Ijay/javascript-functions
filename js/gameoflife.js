@@ -56,7 +56,7 @@ function seed() {
   };
   
   const willBeAlive = (cell, state) => {
-    const getLivingNeighbors = getLivingNeighbors(cell, state);
+    const LivingNeighbors = getLivingNeighbors(cell, state);
     return(
       livingNeighbors.length === 3||
       (contains.cell(state,cell) && livingNeighbors.length === 2)
