@@ -59,7 +59,7 @@ function seed() {
     const livingNeighbors = getLivingNeighbors(cell, state);
     return(
       livingNeighbors.length === 3||
-      (contains.cell(state,cell) && livingNeighbors.length === 2)
+      (contains.call(state,cell) && livingNeighbors.length === 2)
     );
   };
   
